@@ -1,0 +1,11 @@
+pinecone-client
+langchain
+openai
+PyPDF2
+streamlit
+sentence-transformers
+pinecone-text
+pinecone-notebooks
+python-dotenv
+langchain-community
+langchain-huggingface
