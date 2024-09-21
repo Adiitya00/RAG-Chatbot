@@ -45,7 +45,8 @@ Reading each page of the PDF.
 Extracting the text and storing it in a structured format (e.g., chunks or sentences).
 Indexing
 ### Pinecone Integration: 
-The extracted text chunks are indexed using Pinecone, allowing for efficient querying. The indexing process includes:
+The extracted text chunks are indexed using Pinecone, allowing for efficient querying. 
+The indexing process includes:
 Generating embeddings for the text chunks using a pre-trained model (e.g., all-MiniLM-L6-v2).
 Storing these embeddings in Pinecone for quick retrieval during user queries.
 Query Processing
