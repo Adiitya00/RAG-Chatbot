@@ -66,26 +66,26 @@ Template-Based Generation: Using pre-defined templates, the chatbot formulates r
 User Interaction: The final response is then displayed to the user in the chat interface, providing a seamless interaction experience.
 
 # Pipeline Documentation
-PDF Upload: Users upload a PDF document through the interface.
-Text Extraction: The uploaded PDF is processed to extract text.
-Indexing with Pinecone: Extracted text chunks are indexed using Pinecone for fast retrieval.
-User Query: Users can input queries, which are processed to find relevant answers from the indexed text.
-Response Display: The chatbot displays the retrieved answer in the interface.
+### PDF Upload: Users upload a PDF document through the interface.
+### Text Extraction: The uploaded PDF is processed to extract text.
+### Indexing with Pinecone: Extracted text chunks are indexed using Pinecone for fast retrieval.
+### User Query: Users can input queries, which are processed to find relevant answers from the indexed text.
+### Response Display: The chatbot displays the retrieved answer in the interface.
 
 # Requirements for installtion
-pinecone-client
-langchain
-openai
-PyPDF2
-streamlit
-sentence-transformers
-pinecone-text
-pinecone-notebooks
-python-dotenv
-langchain-community
-langchain-huggingface
+pinecone-client ,
+langchain ,
+openai ,
+PyPDF2 ,
+streamlit ,
+sentence-transformers ,
+pinecone-text ,
+pinecone-notebooks ,
+python-dotenv ,
+langchain-community ,
+langchain-huggingface ,
 
-"pip install -r requirements.txt" Run this command to install all this libries
+#### "pip install -r requirements.txt" Run this command to install all this libries
 
 # Dockerfile Creation
 Create a Dockerfile in the root of your project directory. This file will define the environment for your application.
@@ -99,7 +99,7 @@ WORKDIR /app
 Copy requirements.txt to the container
 COPY requirements.txt .
 
-Install the dependencies
+### Install the dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
 Copy the application code to the container
@@ -108,13 +108,13 @@ COPY . .
 Expose the port that Streamlit runs on
 EXPOSE 8501
 
-Command to run the Streamlit app
+### Command to run the Streamlit app
 CMD ["streamlit", "run", "app.py", "--server.port=8501", "--server.address=0.0.0.0"]
 Step 2: Build the Docker Image
 In your terminal, navigate to your project directory and run the following command to build the Docker image:
 "docker build -t advanced-hybrid-search-chatbot"
 
-Step 3: Run the Docker Container
+### Run the Docker Container
 After building the image, you can run the Docker container using:
 "docker run -p 8501:8501 advanced-hybrid-search-chatbot"
 
