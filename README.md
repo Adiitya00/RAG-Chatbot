@@ -72,18 +72,18 @@ User Interaction: The final response is then displayed to the user in the chat i
 ### User Query: Users can input queries, which are processed to find relevant answers from the indexed text.
 ### Response Display: The chatbot displays the retrieved answer in the interface.
 
-# Requirements for installtion
-pinecone-client ,
-langchain ,
-openai ,
-PyPDF2 ,
-streamlit ,
-sentence-transformers ,
-pinecone-text ,
-pinecone-notebooks ,
-python-dotenv ,
-langchain-community ,
-langchain-huggingface ,
+# Requirements for installation
+1) pinecone-client ,
+2) langchain ,
+3) openai ,
+4) PyPDF2 ,
+5) streamlit ,
+6) sentence-transformers ,
+7) pinecone-text ,
+8) pinecone-notebooks ,
+9) python-dotenv ,
+10) langchain-community ,
+11) langchain-huggingface ,
 
 #### "pip install -r requirements.txt" Run this command to install all this libries
 
